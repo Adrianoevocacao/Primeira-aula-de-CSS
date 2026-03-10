@@ -1,0 +1,69 @@
+/* remove margens padrão do navegador */
+
+body{
+    font-family: Arial,sans-serif;
+    background-color: darkgreen;
+    color:white;
+}
+/* cabeçalho do site */
+
+header{
+    background-color: gold;
+    padding: 20px;
+    text-align: center;
+}
+
+/* menu */
+
+nav a{
+    color: navy;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* efeito quando passa o mouse*/
+
+nav a:hover{
+    color: aliceblue;
+}
+
+/* area principal */
+
+main{
+    padding: 20px;
+}
+
+/* caixa de cada jogo */
+
+.game{
+    background-color: gold;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* titulo do jogo */
+
+.game h2{
+    color: navy;
+}
+
+/* botão */
+
+button{
+    color: navy;
+    border: none;
+    cursor: pointer;
+}
+
+/* efeito no botão */
+button :hover{
+    background-color:navy:
+}
+
+footer{
+    background-color: darkgreen;
+    text-align: center;
+    padding: 15px;
+}
