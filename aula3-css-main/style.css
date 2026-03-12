@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Fundo agora com um ton de Laranja  */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ff6600;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.container .card {
+  position: relative;
+  width: 320px;
+  height: 440px;
+
+  /* Sombras ajustadas para um brilho sutil alaranjado */
+  box-shadow: 
+    inset 5px 5px 15px rgba(255, 255, 255, 0.05),
+    5px 5px 15px rgba(0, 0, 0, 0.5);
+
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20fx;
+    right: 20px;
+    bottom: 20px;
+    background: #ee7300 /* Fundo interno um pouco mais claro que o body */
+    border 1px solid #ff7300;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5;
+}
+
+/* Gradiente musical neon no hover (Roxo para ciano) */
+
+/* Caixa interna do card */
+.container .card .box {
+    position: center;
+    transition: all 0.5s ease; /* animação suave */
+}
+
+/* Efeito ao passar o mouse no card */
+
+.container .card:hover .box {
+    transform: translateY(-40px) scale(1.05);
+    background: linear-gradient(45deg, #ff6600, #ff7300);
+    box-shadow: 0 20px 40px rgba(253, 253, 253, 0.5);
+}
+
+.container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilização do ícone musical */
+
+.container .card .box .content .icon{
+    font-size: 4em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    transition: 0.5s;
+
+}
+
+/* No hover, o ícone fica branco para destacar no gradiante */
+
+.container .card:hover .box.content .icon {
+    color: aliceblue;
+    transform:scale(1.1);
+}
+
+.container .card .box .content h2 {
+    position: center;
+    top: -10px;
+    right: 30px
+    font-size 8em;
+    color:rgba (255,255,255,0.03);
+    pointer-events: none;
+}
+
+.container .card .box .content h3 {
+    font-size: 1.8em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.container .card .box .content p {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: black;
+    line-height: 1.6;
+    transition: 0.5s;
+}
+
+.container .card:hover .box .content p {
+    color: rgb(255, 255, 255);
+}
+
+/* Botão de play estilizado */
+.container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: rgb(0, 0, 0);
+    /* botão branco pra contraste */
+    margin-top: 20px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+
+}
